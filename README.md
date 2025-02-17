@@ -1,3 +1,3 @@
 Skład Zespołu: Nikodem Nowak
-Temat: Rezerwowacja stolika w restauracji
+Temat: Rezerwowanie wizyty u fryzjera
 Podsumowanie: ?
