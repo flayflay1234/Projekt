@@ -1,3 +1,3 @@
 Skład Zespołu: Nikodem Nowak
-Temat: ?
+Temat: Rezerwowacja stolika w restauracji
 Podsumowanie: ?
