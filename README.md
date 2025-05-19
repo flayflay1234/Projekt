@@ -1,3 +1,3 @@
 Skład Zespołu: Nikodem Nowak
-Temat: Rezerwowanie wizyty u fryzjera
+Temat: Strona z Minigrami
 Podsumowanie: ?
