@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>CPS Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CPS Test</h1>
+    <p>Klikaj tak szybko, jak potrafisz przez 5 sekund!</p>
+    <button id="click-button" disabled>Start</button>
+    <p id="timer">Pozostało: 5s</p>
+    <p id="click-count">Kliknięcia: 0</p>
+    <p id="cps-result"></p>
+
+    <div id="save-score" style="display:none;">
+      <p>Zapisz swój wynik</p>
+      <input type="text" id="player-name" placeholder="Twój nick">
+      <button onclick="saveScore()">Zapisz</button>
+    </div>
+
+    <div id="highscores">
+      <h2>Najlepsze wyniki</h2>
+      <ul id="highscore-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

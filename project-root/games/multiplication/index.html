@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabliczka mnożenia na czas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tabliczka mnożenia na czas</h1>
+
+  <div id="start-screen">
+    <p>Masz 120 sekund, aby rozwiązać jak najwięcej przykładów.</p>
+    <button id="start-button">Start</button>
+  </div>
+
+  <div id="game-area" style="display:none;">
+    <p>Czas: <span id="timer">120</span>s</p>
+    <p><span id="factor1"></span> × <span id="factor2"></span> = ?</p>
+    <input type="number" id="answer-input" autocomplete="off" />
+    <button id="submit-answer">Sprawdź</button>
+    <p id="feedback"></p>
+    <p>Poprawne odpowiedzi: <span id="score">0</span></p>
+  </div>
+
+  <div id="game-over" style="display:none;">
+    <h2>Koniec gry!</h2>
+    <p>Twój wynik: <span id="final-score"></span></p>
+    <p>Chcesz zapisać swój wynik?</p>
+    <input type="text" id="nickname" placeholder="Twój nick" />
+    <button id="save-score">Zapisz wynik</button>
+  </div>
+
+  <div id="highscores" style="display:none;">
+    <h2>Najlepsze wyniki</h2>
+    <ol id="highscore-list"></ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

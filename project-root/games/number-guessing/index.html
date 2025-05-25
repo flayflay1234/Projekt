@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zgadywanie liczby</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Zgadywanie liczby</h1>
+
+  <div id="difficulty-selection">
+    <p>Wybierz poziom trudności:</p>
+    <button onclick="startGame(100)">Łatwy (1-100)</button>
+    <button onclick="startGame(1000)">Średni (1-1000)</button>
+    <button onclick="startGame(10000)">Trudny (1-10000)</button>
+  </div>
+
+  <input type="hidden" id="difficulty" />
+
+  <div id="game-area" style="display: none;">
+    <p>Zgadnij liczbę od <span id="range-start">1</span> do <span id="range-end"></span>:</p>
+    <input type="number" id="guess-input" />
+    <button onclick="checkGuess()">Zgadnij</button>
+    <p id="feedback"></p>
+    <p id="previous-guess"></p>
+    <p>Liczba prób: <span id="attempts">0</span></p>
+  </div>
+
+  <div id="save-score" style="display: none; margin-top: 2em;">
+    <p>Chcesz zapisać swój wynik?</p>
+    <input type="text" id="nickname" placeholder="Twój nick" />
+    <button onclick="submitScore()">Zapisz wynik</button>
+  </div>
+
+  <div id="highscores" style="display: none; margin-top: 2em;">
+    <h2>Najlepsze wyniki</h2>
+    <ol id="highscore-list"></ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
